@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1>Tic Tac Toe Game Board</h1>
+    <table border="1">
+        <tr th:each="row : ${gameBoard}">
+            <td th:each="cell : ${row}" th:text="${cell}">-</td>
+        </tr>
+    </table>
+</body>
+</html>
